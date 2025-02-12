@@ -1,5 +1,5 @@
 // document.write("hello world </br>");
-// document.write("merhaba javascript"); 
+// document.write("merhaba javascript");
 
 // console.log('hello world');
 // console.warn('uyarilara dkkat');
@@ -16,7 +16,6 @@
 
 // alert('dikkatli ve uygulamali git');
 // alert('takibimdesin');
-
 
 // console.log('merhaba');
 // console.log(window.screen.height);
@@ -50,10 +49,10 @@
 // console.log(d)
 
 // let isim = "nurettin";
-// let 
+// let
 
 //  x =4;
-// let y 
+// let y
 
 // =true;
 // let z= {
@@ -69,7 +68,6 @@
 // console.log(z.fullname.name);
 // console.log(z.location.birdday)
 
-
 // window.alert("nasil gidiyor");
 // alert("cok iyi");
 
@@ -79,7 +77,6 @@
 // let sonuc = confirm("bu sayfayi kapatmak istediginizden emin misiniz?");
 // alert(sonuc);
 
-
 // let boy = Number(prompt("boyunuzu giriniz(metre): "));
 // let kilo = Number(prompt("kilonuzu giriniz : "));
 // let indeks = (kilo/(boy*2));
@@ -88,7 +85,6 @@
 // else if(indeks>=18.5 && indeks<24.5) alert("ideal kilolusunuz "+ indeks);
 // else if(indeks>=24.5 && indeks<29) alert("kilolusunuz "+ indeks);
 // else if(indeks>=29 ) alert("asiri kilolusunuz "+ indeks);
-
 
 //?----------------------BENZIN ISTASYONU---------------------------------
 // const altSatir = "\r\n";
@@ -100,7 +96,7 @@
 // if(secim==1 || secim==2 || secim==3){
 //      let galon = Number(prompt("Alinacak galon miktarini giriniz: "));
 //      let bakiyeniz = Number(prompt("Bakiye miktarini giriniz"));
-     
+
 //      if(secim==1){
 //         let tutar = galon*Dizel;
 //         if(bakiyeniz>=tutar){
@@ -133,7 +129,6 @@
 //     alert("Lutfen gogru degeri girdiginize emin olun...")
 // }
 
-
 //?-------------------ATM----------------------------------
 // const altSatir="\r\n";
 // let bakiyeniz= 1000;
@@ -155,20 +150,17 @@
 //             alert("Isleminiz onaylandi lutfen gosterilen yerden paranizi cekiniz..."+ altSatir + altSatir+ "bakiyeniz: " +(bakiyeniz-cekilenPara));
 //         }
 //         break;
-    // case "3":
-    //     let yatirilacakPara = Number(prompt("Yatirilacak para miktarini giriniz:"));
-    //     bakiyeniz = bakiyeniz + yatirilacakPara;
-    //     alert("Paraniz yatirildi."+ altSatir+ "Bakiyeniz: "+ bakiyeniz);
-    //     break;
-    // case "4":
-    //     alert("Cikis yaptiniz...")
-    //     break;
-    // default:
-    //     alert("Lutfen secimlerinizi dogru yapin...")
+// case "3":
+//     let yatirilacakPara = Number(prompt("Yatirilacak para miktarini giriniz:"));
+//     bakiyeniz = bakiyeniz + yatirilacakPara;
+//     alert("Paraniz yatirildi."+ altSatir+ "Bakiyeniz: "+ bakiyeniz);
+//     break;
+// case "4":
+//     alert("Cikis yaptiniz...")
+//     break;
+// default:
+//     alert("Lutfen secimlerinizi dogru yapin...")
 //}
-
-
-
 
 //**************BreakPoint****************************** */
 //KODLARI TANE TANE CALISTIRMA METODU
@@ -203,7 +195,7 @@
 //         continue;// sayac 6 oldugunda continue dan sonraki hicbir kodu okumaz  yuzden sayac++ basa eklenmesine dikkat et sonsuz dongu olusur
 //     }
 //     console.log(sayac);
-    
+
 // }
 /*
 !----------------------SADIK TURAN-----------------------------
@@ -216,7 +208,7 @@
 
 //  let mesaj0 = "Benim adim " + ad + " ve soyadim " + soyad + ". " + sehir + "'de yasiyorum " + (65-yas) + " yilim kaldi emeklilige.";
 //  console.log(mesaj0);
- 
+
 //  let mesaj1 = `Benim adim  ${ad}  ve soyadim  ${soyad}.  ${sehir} 'de yasiyorum  ${(65-yas)}  yilim kaldi emeklilige`;
 //  console.log(mesaj1);
 
@@ -278,11 +270,9 @@
 // let result4 = kursAdi.includes("Egitimi");
 // console.log(result4);
 
-
 // let result6 = kursAdi.toLocaleLowerCase();
 // let result5 = result6.replaceAll(" ", "-");
 // console.log(url + "/" + result5);
-
 
 // console.log(`${url}/${result5}`);
 
@@ -335,11 +325,11 @@
 // console.log(sonuc);
 // sonuc = ogrenciler.length;
 // console.log(sonuc);
-// // sonuc = ogrenciler.pop();//son elenan silinir ve silinen eleman geri dondurulur                 
+// // sonuc = ogrenciler.pop();//son elenan silinir ve silinen eleman geri dondurulur
 // // console.log(sonuc);
 // // sonuc = ogrenciler.shift();//ilk eleman silinir ve geri dondurulur
 // // console.log(sonuc);
-// sonuc = ogrenciler.push("sena"); // dizinin sonuna eleman ekler 
+// sonuc = ogrenciler.push("sena"); // dizinin sonuna eleman ekler
 // console.log(sonuc);
 // console.log(ogrenciler)
 // sonuc = ogrenciler.unshift("canan");//listenin basina eleman ekle
@@ -435,10 +425,9 @@
 // console.log(urunler[0].urunAdi)//dizi icindeki objeye olasma sekli
 // console.log(urunler[1].urunFiyati)
 
-
 //********************* OBJE - PROJECT ************************* */
 
-// siparisler =[ 
+// siparisler =[
 //     {
 //     "siparisId":"101",
 //     "siparisTarihi":"31.12.2022",
@@ -496,7 +485,6 @@
 // console.log(siparisler[0].siparisId+ " Nolu siparis toplam : "+toplam1)
 // let toplam2 =  siparisler[1].alinanUrunler[1].urunFiyati*(0.18+1) + siparisler[1].alinanUrunler[1].urunFiyati*(1+0.18);
 // console.log(siparisler[1].siparisId+ " Nolu siparis toplam : "+toplam2)
-
 
 //********************* DONGULER************************* */
 // let sayilar = [1,5,3,8,9,7,7,4,8];
