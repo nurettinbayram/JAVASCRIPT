@@ -5,7 +5,7 @@ var cars = [
     mil: "14000",
     plateNo: "DFR45",
     discription:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nisi distinctio soluta porro recusandae ipsam exercitationem voluptas atque excepturi. Quisquam officia perferendis magni dolore earum ab optio. Debitis, enim itaqu",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nisi distinctio soluta porro recusandae ipLorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nisi distinctio soluta porro recusandae ipsam exercitationem voluptas atque excepturi. Quisquam officia perferendis magni dolore earum ab optio. Debitis, enim itaquLorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nisi distinctio soluta porro recusandae ipsam exercitationem voluptas atque excepturi. Quisquam officia perferendis magni dolore earum ab optio. Debitis, enim itaqusam exercitationem voluptas atque excepturi. Quisquam officia perferendis magni dolore earum ab optio. Debitis, enim itaqu",
   },
   {
     brand: "Volvo",
@@ -44,33 +44,38 @@ var cars = [
 //butonlara erisim
 const btnRight = document.getElementById("right");
 const btnLeft = document.getElementById("left");
-console.log(cars.length);
+const icons = document.querySelectorAll(".bi");
+
+var settings = {
+  duration: 1000,
+  random: false,
+};
+
+var index = 0;
+let car;
+var interval;
 
 //Right butonuna
 btnRight.addEventListener("click", rightSlider);
-let index = 0;
-let car;
-
-//ilk calismada
-rightSlider();
 
 function rightSlider() {
-  index += 1;
+  index++;
   if (index >= cars.length) index = 0;
-  car = cars[index];
-  document.getElementById("img").src = car.img;
-  document.getElementById("brand").innerHTML = car.brand;
-  document.getElementById("mil").innerHTML = car.mil;
-  document.getElementById("plateNo").innerHTML = car.plateNo;
-  document.getElementById("discription").innerHTML = car.discription;
+  changeSlider(index);
 }
 
 //Left butonu
 btnLeft.addEventListener("click", leftSlider);
 
 function leftSlider() {
-  index -= 1;
+  index--;
   if (index < 0) index = cars.length - 1;
+  changeSlider(index);
+}
+
+//elemanlari degistirme fonksiyonu
+function changeSlider(index) {
+  console.log(index);
   car = cars[index];
   document.getElementById("img").src = car.img;
   document.getElementById("brand").innerHTML = car.brand;
@@ -78,3 +83,45 @@ function leftSlider() {
   document.getElementById("plateNo").innerHTML = car.plateNo;
   document.getElementById("discription").innerHTML = car.discription;
 }
+let prev;
+function autoSlider(settings) {
+  interval = setInterval(function () {
+    //setInterval ile sureyi baslattiyoruz
+    if (settings.random) {
+      //setting objesinden gelen random degerine bagli olarak
+      do {
+        index = Math.floor(Math.random() * (cars.length - 1));
+      } while (index == prev); //burada ayni slide iki kere oynamasin diye
+      prev = index;
+    } else {
+      index++;
+      if (index >= cars.length) {
+        index = 0;
+      }
+    }
+    changeSlider(index);
+  }, settings.duration); //duration suresi kadar slide bekleyip tekrarlanir
+}
+
+//ilk calismada
+autoSlider(settings);
+
+//iconlar izerine gelinddiginde
+icons.forEach((icon) => {
+  icon.addEventListener("mouseenter", function () {
+    clearInterval(interval);
+  });
+});
+
+icons.forEach((icon) => {
+  icon.addEventListener("mouseleave", () => {
+    autoSlider(settings); //mouse ikonlardan ayrildigi tekrar slide gecisleri baslasin
+  });
+});
+
+document.getElementById("img").addEventListener("mouseenter", function () {
+  clearInterval(interval);
+});
+document.getElementById("img").addEventListener("mouseleave", function () {
+  autoSlider(settings);
+});
