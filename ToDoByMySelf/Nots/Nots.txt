@@ -1,0 +1,4 @@
+    -> Ctrl + Shift + P -----------------> Preferences: Open Settings (JSON) yaz ve seç
+    -> Shift + Alt + F ------------------> Codu formatlama
+    -> node "dosyaAdi.js"  --------------> js calistirma komutu
+    -> Ctrl + Alt + N -------------------> js terminalde calistirma komutu
