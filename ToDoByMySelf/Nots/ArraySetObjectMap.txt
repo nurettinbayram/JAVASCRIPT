@@ -1,4 +1,4 @@
-    ----------------------------> Array Methods <-----------------------------------------
+    ----------------------------> [] Array Methods <-----------------------------------------
 
     -> names = ["Dani", "joe", "Sarah", "Molly", "joe"]
     -> names2 = ["John", "Tom"]
@@ -32,18 +32,20 @@
 
 
 
-    ----------------------------> Set Methods <-----------------------------------------
+    ----------------------------> () Set Methods <-----------------------------------------
     ~ Tekrar eden öğeleri otomatik olarak silen liste benzeri bir yapıdır.
     ~ Sıralı ama indekslenmez.
     ~ add(), delete(), has(), clear() metotları vardır
 
 
-    ----------------------------> Map Methods <-----------------------------------------
+    ----------------------------> () Map Methods <-----------------------------------------
     ~ Anahtar-değer (key-value) çiftleriyle çalışan, sıralı bir listedir.
     ~ Hem nesne hem liste özelliği taşır.
     ~ Her anahtar herhangi bir veri türü olabilir
     ~ 
 
+
+    ----------------------------> {} Object Methods <-----------------------------------------
 
 
     

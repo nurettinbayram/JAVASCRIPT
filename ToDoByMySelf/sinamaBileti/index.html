@@ -23,7 +23,17 @@
           <div class="seat m-2"></div>
           <div class="seat m-2"></div>
           <div class="seat m-2"></div>
-          <div class="seat m-2 reserved"></div>
+          <div class="seat m-2"></div>
+          <div class="seat m-2"></div>
+          <div class="seat m-2"></div>
+          <div class="seat m-2"></div>
+          <div class="seat m-2"></div>
+        </div>
+        <div class="row">
+          <div class="seat m-2"></div>
+          <div class="seat m-2"></div>
+          <div class="seat m-2"></div>
+          <div class="seat m-2"></div>
           <div class="seat m-2"></div>
           <div class="seat m-2"></div>
           <div class="seat m-2"></div>
@@ -31,20 +41,10 @@
         </div>
         <div class="row">
           <div class="seat m-2"></div>
-          <div class="seat m-2 reserved"></div>
           <div class="seat m-2"></div>
           <div class="seat m-2"></div>
           <div class="seat m-2"></div>
-          <div class="seat m-2 reserved"></div>
           <div class="seat m-2"></div>
-          <div class="seat m-2"></div>
-        </div>
-        <div class="row">
-          <div class="seat m-2"></div>
-          <div class="seat m-2"></div>
-          <div class="seat m-2 reserved"></div>
-          <div class="seat m-2 reserved"></div>
-          <div class="seat m-2 reserved"></div>
           <div class="seat m-2"></div>
           <div class="seat m-2"></div>
           <div class="seat m-2"></div>
@@ -74,7 +74,7 @@
             <span>Movies :</span>
           </div>
           <div class="fs-4">
-            <select name="selection" id="movies">
+            <select name="selection" id="movies" class="">
               <option value="20">Movi1</option>
               <option value="30">Movi2</option>
               <option value="40">Movi3</option>
@@ -83,6 +83,22 @@
         </div>
         <div class="row text-white mt-4 fs-5">
           <p>Toplam ucret : <span id="amount">0</span></p>
+        </div>
+        <div>
+          <button
+            type="button"
+            id="reservedBtn"
+            class="btn btn-outline-warning shadow-lg me-2"
+          >
+            Reserved
+          </button>
+          <button
+            type="button"
+            id="unReservedBtn"
+            class="btn btn-outline-info shadow-lg"
+          >
+            UnReserved
+          </button>
         </div>
       </div>
     </div>

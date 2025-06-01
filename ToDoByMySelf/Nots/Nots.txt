@@ -2,3 +2,11 @@
     -> Shift + Alt + F ------------------> Codu formatlama
     -> node "dosyaAdi.js"  --------------> js calistirma komutu
     -> Ctrl + Alt + N -------------------> js terminalde calistirma komutu
+    // !
+    // ?
+    // #
+    // ->
+    // *
+    // #
+    // &
+    // 
