@@ -29,6 +29,7 @@
     -> m = names.sort((a,b) => a-b)--------> numarik siralar siralar
     -> m = names.sort((a,b) => b-a)--------> numarik siralar ters siralar
     -> m = names.sort()--------------------> alfabetik siralar siralar
+    -> m = nums.reverse() -----------------> diziyi tersine cevir
 
 
 
